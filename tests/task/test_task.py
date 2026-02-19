@@ -1,6 +1,6 @@
 import pytest
-from pydantic import Field, ValidationError
-from ucl_open.rigs.task import Task, TaskParameters
+from pydantic import Field
+from ucl_open.rigs.task import TaskParameters
 
 class TaskParametersImplementation(TaskParameters):
     test_parameter: int = Field(default=27, description="A test integer parameter")
