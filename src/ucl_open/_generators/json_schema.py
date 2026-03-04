@@ -18,7 +18,7 @@ class ToGenerateJsonSchema:
 def main():
     models = [
         ToGenerateJsonSchema(model_name="data_types", model=DataTypes),
-        ToGenerateJsonSchema(model_name="displays", model=Displays)
+        ToGenerateJsonSchema(model_name="displays_data_types", model=Displays)
     ]
     
     for model in models:
