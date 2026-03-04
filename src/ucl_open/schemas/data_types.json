@@ -5,6 +5,9 @@
         "vector3": {
           "$ref": "#/$defs/Vector3"
         },
+        "vector2": {
+          "$ref": "#/$defs/Vector2"
+        },
         "softwareEvent": {
           "$ref": "#/$defs/SoftwareEvent"
         },
@@ -14,6 +17,7 @@
       },
       "required": [
         "vector3",
+        "vector2",
         "softwareEvent",
         "spoutRigPosition"
       ],
@@ -49,6 +53,15 @@
           },
           "description": "Extrinsics",
           "title": "Extrinsics"
+        },
+        "viewport": {
+          "$ref": "#/$defs/Viewport",
+          "default": {
+            "height": 1.0,
+            "width": 1.0,
+            "x": 0.0,
+            "y": 0.0
+          }
         }
       },
       "title": "DisplayCalibration",
@@ -278,6 +291,26 @@
       "title": "TimestampSource",
       "type": "string"
     },
+    "Vector2": {
+      "properties": {
+        "x": {
+          "description": "X coordinate of the point.",
+          "title": "X",
+          "type": "number"
+        },
+        "y": {
+          "description": "Y coordinate of the point.",
+          "title": "Y",
+          "type": "number"
+        }
+      },
+      "required": [
+        "x",
+        "y"
+      ],
+      "title": "Vector2",
+      "type": "object"
+    },
     "Vector3": {
       "properties": {
         "x": {
@@ -302,6 +335,42 @@
         "z"
       ],
       "title": "Vector3",
+      "type": "object"
+    },
+    "Viewport": {
+      "properties": {
+        "height": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Height",
+          "type": "number"
+        },
+        "width": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Width",
+          "type": "number"
+        },
+        "x": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "X",
+          "type": "number"
+        },
+        "y": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Y",
+          "type": "number"
+        }
+      },
+      "required": [
+        "height",
+        "width",
+        "x",
+        "y"
+      ],
+      "title": "Viewport",
       "type": "object"
     }
   },
