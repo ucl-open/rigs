@@ -24,3 +24,6 @@ class DisplayExtrinsics(BaseSchema):
 class DisplayCalibration(BaseSchema):
     intrinsics: DisplayIntrinsics = Field(default=DisplayIntrinsics(), description="Intrinsics", validate_default=True)
     extrinsics: DisplayExtrinsics = Field(default=DisplayExtrinsics(), description="Extrinsics", validate_default=True)
+    
+class Displays(BaseSchema):
+    display_calibration: DisplayCalibration

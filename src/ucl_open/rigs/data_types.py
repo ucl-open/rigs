@@ -84,8 +84,3 @@ class DataTypes(BaseSchema):
     vector3 : Vector3 
     software_event : SoftwareEvent
     spout_rig_position: SpoutRigPosition
-
-def main() -> None:
-    schema = DataTypes.model_json_schema(union_format="primitive_type_array")
-    schema.pop("properties", None)
-    Path("DataTypes.json").write_text(json.dumps(schema, indent=2))
