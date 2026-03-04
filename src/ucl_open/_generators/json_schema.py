@@ -4,17 +4,11 @@ from pathlib import Path
 from ucl_open.rigs.base import BaseSchema
 from ucl_open.rigs.data_types import DataTypes
 from ucl_open.rigs.displays import Displays
-from typing import Type, Union
-from dataclasses import dataclass
+from typing import Union
 import json
 import pydantic
 
 SCHEMA_ROOT = Path("./src/ucl_open/schemas")
-
-@dataclass
-class ToGenerateJsonSchema:
-    model_name: str
-    model: Type[BaseSchema]
 
 def main():
     models = [
