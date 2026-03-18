@@ -12,11 +12,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Bonsai.Spinnaker" Version="0.9.1" />
+    <PackageReference Include="Bonsai.System" Version="2.9.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\UclOpen.Bonsai.Core\UclOpen.Bonsai.Core.csproj" />
+    <ProjectReference Include="..\UclOpen.Core\UclOpen.Core.csproj" />
   </ItemGroup>
 
 </Project>

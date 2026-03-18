@@ -1,2 +1,0 @@
-# UclOpen Bonsai
-

@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\UclOpen.Bonsai.Core\UclOpen.Bonsai.Core.csproj" />
+    <ProjectReference Include="..\UclOpen.Core\UclOpen.Core.csproj" />
   </ItemGroup>
 
 </Project>
