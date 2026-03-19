@@ -14,3 +14,4 @@ _version.py
 **/.bonsai/*
 !**/.bonsai/Bonsai.config
 !**/.bonsai/NuGet.config
+!**/.bonsai/Setup.ps1
